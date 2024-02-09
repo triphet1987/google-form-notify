@@ -1,6 +1,6 @@
 function onFormSubmit() {
   
-  var form = FormApp.openById('1A1QNz8pRhmKbboUKZzwOsQbe3J7IXjnAZR0gGhkPRcg');
+  var form = FormApp.openById('รหัส IDฟอร์ม');
   var fRes = form.getResponses();
   var formResponse = fRes[fRes.length - 1];
   var itemResponses = formResponse.getItemResponses();
@@ -17,7 +17,7 @@ function onFormSubmit() {
 }
 
 function sendLineNotify(message) {
-  var token = ['A5O1guCE9eixcbCPXJfNVUd15MITQsUO70VlLToY1Zs'];
+  var token = ['TOKEN Line Notify'];
   var options = {
     "method": "post",
     "payload": "message=" + message,
